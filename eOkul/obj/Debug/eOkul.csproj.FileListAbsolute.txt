@@ -14,10 +14,13 @@ C:\Users\SOFUOGLU\Documents\GitHub\eSchool\eOkul\bin\Debug\eOkul.exe
 C:\Users\SOFUOGLU\Documents\GitHub\eSchool\eOkul\bin\Debug\eOkul.pdb
 C:\Users\SOFUOGLU\Documents\GitHub\eSchool\eOkul\obj\Debug\eOkul.csproj.AssemblyReference.cache
 C:\Users\SOFUOGLU\Documents\GitHub\eSchool\eOkul\obj\Debug\eOkul.csproj.SuggestedBindingRedirects.cache
-C:\Users\SOFUOGLU\Documents\GitHub\eSchool\eOkul\obj\Debug\eOkul.Form1.resources
 C:\Users\SOFUOGLU\Documents\GitHub\eSchool\eOkul\obj\Debug\eOkul.FormStudentNotes.resources
 C:\Users\SOFUOGLU\Documents\GitHub\eSchool\eOkul\obj\Debug\eOkul.Properties.Resources.resources
 C:\Users\SOFUOGLU\Documents\GitHub\eSchool\eOkul\obj\Debug\eOkul.csproj.GenerateResource.cache
 C:\Users\SOFUOGLU\Documents\GitHub\eSchool\eOkul\obj\Debug\eOkul.csproj.CoreCompileInputs.cache
 C:\Users\SOFUOGLU\Documents\GitHub\eSchool\eOkul\obj\Debug\eOkul.exe
 C:\Users\SOFUOGLU\Documents\GitHub\eSchool\eOkul\obj\Debug\eOkul.pdb
+C:\Users\SOFUOGLU\Documents\GitHub\eSchool\eOkul\obj\Debug\eOkul.FormTeacher.resources
+C:\Users\SOFUOGLU\Documents\GitHub\eSchool\eOkul\obj\Debug\eOkul.FormLogin.resources
+C:\Users\SOFUOGLU\Documents\GitHub\eSchool\eOkul\obj\Debug\eOkul.FormClub.resources
+C:\Users\SOFUOGLU\Documents\GitHub\eSchool\eOkul\obj\Debug\eOkul.FormDeletedClubs.resources

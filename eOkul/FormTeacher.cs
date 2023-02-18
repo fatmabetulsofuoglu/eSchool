@@ -16,5 +16,11 @@ namespace eOkul
         {
             InitializeComponent();
         }
+
+        private void buttonClubs_Click(object sender, EventArgs e)
+        {
+            FormClub club = new FormClub();
+            club.Show();
+        }
     }
 }

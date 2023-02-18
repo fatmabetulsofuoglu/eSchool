@@ -46,11 +46,23 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Form1.cs">
+    <Compile Include="FormClub.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="FormClub.Designer.cs">
+      <DependentUpon>FormClub.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormDeletedClubs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormDeletedClubs.Designer.cs">
+      <DependentUpon>FormDeletedClubs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormLogin.Designer.cs">
+      <DependentUpon>FormLogin.cs</DependentUpon>
     </Compile>
     <Compile Include="FormStudentNotes.cs">
       <SubType>Form</SubType>
@@ -58,13 +70,28 @@
     <Compile Include="FormStudentNotes.Designer.cs">
       <DependentUpon>FormStudentNotes.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormTeacher.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormTeacher.Designer.cs">
+      <DependentUpon>FormTeacher.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <EmbeddedResource Include="FormClub.resx">
+      <DependentUpon>FormClub.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormDeletedClubs.resx">
+      <DependentUpon>FormDeletedClubs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormLogin.resx">
+      <DependentUpon>FormLogin.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormStudentNotes.resx">
       <DependentUpon>FormStudentNotes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormTeacher.resx">
+      <DependentUpon>FormTeacher.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
