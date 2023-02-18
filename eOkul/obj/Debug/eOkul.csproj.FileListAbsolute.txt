@@ -1,0 +1,11 @@
+C:\Users\SOFUOGLU\Documents\GitHub\eOkul\eOkul\bin\Debug\eOkul.exe.config
+C:\Users\SOFUOGLU\Documents\GitHub\eOkul\eOkul\bin\Debug\eOkul.exe
+C:\Users\SOFUOGLU\Documents\GitHub\eOkul\eOkul\bin\Debug\eOkul.pdb
+C:\Users\SOFUOGLU\Documents\GitHub\eOkul\eOkul\obj\Debug\eOkul.csproj.AssemblyReference.cache
+C:\Users\SOFUOGLU\Documents\GitHub\eOkul\eOkul\obj\Debug\eOkul.csproj.SuggestedBindingRedirects.cache
+C:\Users\SOFUOGLU\Documents\GitHub\eOkul\eOkul\obj\Debug\eOkul.Form1.resources
+C:\Users\SOFUOGLU\Documents\GitHub\eOkul\eOkul\obj\Debug\eOkul.Properties.Resources.resources
+C:\Users\SOFUOGLU\Documents\GitHub\eOkul\eOkul\obj\Debug\eOkul.csproj.GenerateResource.cache
+C:\Users\SOFUOGLU\Documents\GitHub\eOkul\eOkul\obj\Debug\eOkul.csproj.CoreCompileInputs.cache
+C:\Users\SOFUOGLU\Documents\GitHub\eOkul\eOkul\obj\Debug\eOkul.exe
+C:\Users\SOFUOGLU\Documents\GitHub\eOkul\eOkul\obj\Debug\eOkul.pdb
