@@ -48,7 +48,7 @@
             this.ClientSize = new System.Drawing.Size(558, 433);
             this.Controls.Add(this.dataGridView1);
             this.Name = "FormStudentNotes";
-            this.Text = "FormStudentNotes";
+            this.Text = "Öğrenci Not Bilgileri";
             this.Load += new System.EventHandler(this.FormStudentNotes_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);

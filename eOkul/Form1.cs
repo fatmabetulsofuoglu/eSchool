@@ -16,5 +16,12 @@ namespace eOkul
         {
             InitializeComponent();
         }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+            FormStudentNotes formStudentNotes = new FormStudentNotes();
+            formStudentNotes.studentName = textBox1.Text;
+            formStudentNotes.Show();
+        }
     }
 }
