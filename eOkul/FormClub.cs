@@ -65,6 +65,8 @@ namespace eOkul
             sqlCommandDelete.Parameters.AddWithValue("@D1", textBoxID.Text);
             sqlCommandDelete.ExecuteNonQuery();
             conn.Close(); 
+            textBoxID.Clear();
+            textBoxClubName.Clear();
             MessageBox.Show("Kulüp kaldırıldı.", "Başarılı", MessageBoxButtons.OK, MessageBoxIcon.Information);
             list();
         }
@@ -73,6 +75,20 @@ namespace eOkul
         {
             FormDeletedClubs formDeletedClubs = new FormDeletedClubs();
             formDeletedClubs.Show();
+        }
+
+        private void buttonUpdate_Click(object sender, EventArgs e)
+        {
+            conn.Open();
+            SqlCommand sqlCommandUpdate = new SqlCommand("UPDATE TBL_KULUP SET AD=@P1 WHERE ID=@P2", conn);
+            sqlCommandUpdate.Parameters.AddWithValue("@P1", textBoxClubName.Text);
+            sqlCommandUpdate.Parameters.AddWithValue("@P2", textBoxID.Text);
+            sqlCommandUpdate.ExecuteNonQuery();
+            conn.Close();
+            textBoxID.Clear();
+            textBoxClubName.Clear();
+            MessageBox.Show("Kulüp güncellendi.", "Başarılı", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            list();
         }
     }
 }

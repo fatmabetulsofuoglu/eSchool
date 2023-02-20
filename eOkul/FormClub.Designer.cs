@@ -86,7 +86,7 @@
             // 
             // buttonUpdate
             // 
-            this.buttonUpdate.BackColor = System.Drawing.Color.LimeGreen;
+            this.buttonUpdate.BackColor = System.Drawing.Color.YellowGreen;
             this.buttonUpdate.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonUpdate.ForeColor = System.Drawing.SystemColors.ControlText;
             this.buttonUpdate.Location = new System.Drawing.Point(16, 305);
@@ -95,10 +95,11 @@
             this.buttonUpdate.TabIndex = 4;
             this.buttonUpdate.Text = "Güncelle";
             this.buttonUpdate.UseVisualStyleBackColor = false;
+            this.buttonUpdate.Click += new System.EventHandler(this.buttonUpdate_Click);
             // 
             // buttonDelete
             // 
-            this.buttonDelete.BackColor = System.Drawing.Color.Crimson;
+            this.buttonDelete.BackColor = System.Drawing.Color.Salmon;
             this.buttonDelete.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonDelete.Location = new System.Drawing.Point(222, 305);
             this.buttonDelete.Name = "buttonDelete";

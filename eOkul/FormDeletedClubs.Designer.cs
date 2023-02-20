@@ -31,11 +31,12 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormDeletedClubs));
             this.textBoxID = new System.Windows.Forms.TextBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.buttonUpdate = new System.Windows.Forms.Button();
+            this.buttonActive = new System.Windows.Forms.Button();
             this.buttonList = new System.Windows.Forms.Button();
             this.textBoxClubName = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.buttonDelete = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
@@ -60,18 +61,18 @@
             this.pictureBox1.TabIndex = 15;
             this.pictureBox1.TabStop = false;
             // 
-            // buttonUpdate
+            // buttonActive
             // 
-            this.buttonUpdate.BackColor = System.Drawing.Color.LimeGreen;
-            this.buttonUpdate.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonUpdate.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.buttonUpdate.Location = new System.Drawing.Point(16, 305);
-            this.buttonUpdate.Name = "buttonUpdate";
-            this.buttonUpdate.Size = new System.Drawing.Size(406, 40);
-            this.buttonUpdate.TabIndex = 13;
-            this.buttonUpdate.Text = "Aktifleştir";
-            this.buttonUpdate.UseVisualStyleBackColor = false;
-            this.buttonUpdate.Click += new System.EventHandler(this.buttonUpdate_Click);
+            this.buttonActive.BackColor = System.Drawing.Color.YellowGreen;
+            this.buttonActive.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonActive.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.buttonActive.Location = new System.Drawing.Point(16, 305);
+            this.buttonActive.Name = "buttonActive";
+            this.buttonActive.Size = new System.Drawing.Size(200, 40);
+            this.buttonActive.TabIndex = 13;
+            this.buttonActive.Text = "Aktifleştir";
+            this.buttonActive.UseVisualStyleBackColor = false;
+            this.buttonActive.Click += new System.EventHandler(this.buttonUpdate_Click);
             // 
             // buttonList
             // 
@@ -109,6 +110,20 @@
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(410, 231);
             this.dataGridView1.TabIndex = 9;
+            this.dataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellClick);
+            // 
+            // buttonDelete
+            // 
+            this.buttonDelete.BackColor = System.Drawing.Color.Salmon;
+            this.buttonDelete.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonDelete.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.buttonDelete.Location = new System.Drawing.Point(222, 305);
+            this.buttonDelete.Name = "buttonDelete";
+            this.buttonDelete.Size = new System.Drawing.Size(200, 40);
+            this.buttonDelete.TabIndex = 17;
+            this.buttonDelete.Text = "Sil";
+            this.buttonDelete.UseVisualStyleBackColor = false;
+            this.buttonDelete.Click += new System.EventHandler(this.buttonDelete_Click);
             // 
             // FormDeletedClubs
             // 
@@ -116,9 +131,10 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.LightYellow;
             this.ClientSize = new System.Drawing.Size(434, 411);
+            this.Controls.Add(this.buttonDelete);
             this.Controls.Add(this.textBoxID);
             this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.buttonUpdate);
+            this.Controls.Add(this.buttonActive);
             this.Controls.Add(this.buttonList);
             this.Controls.Add(this.textBoxClubName);
             this.Controls.Add(this.label1);
@@ -137,10 +153,11 @@
 
         private System.Windows.Forms.TextBox textBoxID;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Button buttonUpdate;
+        private System.Windows.Forms.Button buttonActive;
         private System.Windows.Forms.Button buttonList;
         private System.Windows.Forms.TextBox textBoxClubName;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.Button buttonDelete;
     }
 }

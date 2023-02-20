@@ -38,11 +38,30 @@ namespace eOkul
         private void buttonUpdate_Click(object sender, EventArgs e)
         {
             conn.Open();
-            SqlCommand sqlCommandDelete = new SqlCommand("UPDATE TBL_KULUP SET DURUM=1 WHERE ID=@D1", conn);
+            SqlCommand sqlCommandActive = new SqlCommand("UPDATE TBL_KULUP SET DURUM=1 WHERE ID=@D1", conn);
+            sqlCommandActive.Parameters.AddWithValue("@D1", textBoxID.Text);
+            sqlCommandActive.ExecuteNonQuery();
+            conn.Close();
+            MessageBox.Show("Kulüp aktifleştirildi.", "Başarılı", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            list();
+        }
+
+        private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            textBoxID.Text = dataGridView1.Rows[e.RowIndex].Cells[0].Value.ToString();
+            textBoxClubName.Text = dataGridView1.Rows[e.RowIndex].Cells[1].Value.ToString();
+        }
+
+        private void buttonDelete_Click(object sender, EventArgs e)
+        {
+            conn.Open();
+            SqlCommand sqlCommandDelete = new SqlCommand("DELETE FROM TBL_KULUP WHERE ID=@D1", conn);
             sqlCommandDelete.Parameters.AddWithValue("@D1", textBoxID.Text);
             sqlCommandDelete.ExecuteNonQuery();
             conn.Close();
-            MessageBox.Show("Kulüp aktifleştirildi.", "Başarılı", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            textBoxID.Clear();
+            textBoxClubName.Clear();
+            MessageBox.Show("Kulüp silindi.", "Başarılı", MessageBoxButtons.OK, MessageBoxIcon.Information);
             list();
         }
     }
